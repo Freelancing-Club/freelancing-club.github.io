@@ -1,0 +1,74 @@
+@import 'D:\PROJECT COLLGE\freelweb\src\components\header\variable.scss';
+
+
+.nav {
+  color: $vc-colors-text-foreground;
+  font-family: Satoshi, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  z-index: 5000;
+  max-width: none;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 40px;
+  display: flex;
+  position: relative;
+}
+
+.logo-link {
+  &.w-inline-block {
+    &.w--current {
+      font-family: Satoshi,sans-serif;
+      font-size: 16px;
+      line-height: 1;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      background-color: transparent;
+      color: $vc-colors-text-foreground;
+      max-width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+
+      &.logo {
+        
+        font-family: Satoshi,sans-serif;
+        font-size: 16px;
+        line-height: 1;
+        color: $vc-colors-text-foreground;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        border: 0;
+        vertical-align: middle;
+        max-width: 100%;
+        display: inline-block;
+        position: static;
+      }
+    }
+  }
+}
+
+
+.nav-list {
+
+  color:$vc-colors-text-foreground ;
+  font-family: Satoshi,sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: -32px;
+  display: flex;
+
