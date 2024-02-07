@@ -1,74 +1,26 @@
-@import 'D:\PROJECT COLLGE\freelweb\src\components\header\variable.scss';
+header {
+  padding: 1rem;
+  text-align: right;
+
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 20px;
+  right: 50px;
 
 
-.nav {
-  color: $vc-colors-text-foreground;
-  font-family: Satoshi, sans-serif;
-  font-size: 16px;
-  line-height: 1;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  z-index: 5000;
-  max-width: none;
-  justify-content: space-between;
-  align-items: stretch;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 8px 40px;
-  display: flex;
-  position: relative;
-}
+  nav{
+    display: flex;
+    justify-content: right;
+    gap: 40px;
 
-.logo-link {
-  &.w-inline-block {
-    &.w--current {
-      font-family: Satoshi,sans-serif;
-      font-size: 16px;
-      line-height: 1;
-      box-sizing: border-box;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-      background-color: transparent;
-      color: $vc-colors-text-foreground;
-      max-width: 100%;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-
-      &.logo {
-        
-        font-family: Satoshi,sans-serif;
-        font-size: 16px;
-        line-height: 1;
-        color: $vc-colors-text-foreground;
-        box-sizing: border-box;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
-        border: 0;
-        vertical-align: middle;
-        max-width: 100%;
-        display: inline-block;
-        position: static;
-      }
+    a{
+      color: white;
+      text-decoration: none;
     }
   }
+
+  @media screen and (max-width:766px){
+    right: -500px;
+  }
 }
-
-
-.nav-list {
-
-  color:$vc-colors-text-foreground ;
-  font-family: Satoshi,sans-serif;
-  font-size: 16px;
-  line-height: 1;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: -32px;
-  display: flex;
-
