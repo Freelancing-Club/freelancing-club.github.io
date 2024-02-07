@@ -1,12 +1,38 @@
 import React from "react";
-import styled from "styled-components";
+import "./header.scss";
 
-const Container = styled.div`
-  background-color: blue;
-`;
-
+const sections = [
+  {
+    id: "home",
+    label: "Home",
+  },
+  {
+    id: "events",
+    label: "Events",
+  },
+  {
+    id: "comittee",
+    label: "Committe",
+  },
+  {
+    id: "contactUs",
+    label: "Contact Us",
+  },
+];
 const Header = () => {
-  return <Container>Header</Container>;
+  return (
+    <header>
+      <nav>
+        {sections.map(({ id, label }) => {
+          return (
+            <div key={id}>
+              <a href={"#" + id}>{label}</a>
+            </div>
+          );
+        })}
+      </nav>
+    </header>
+  );
 };
 
 export default Header;
