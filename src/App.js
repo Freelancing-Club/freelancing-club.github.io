@@ -17,21 +17,20 @@ function App() {
             track: "rgb(5 18 60)",
             scroll: "white",
             accent: "white",
-            id:"home"
+            id: "home",
           },
           {
             track: "#00a2e1",
             scroll: "white",
             accent: "white",
-            id:"events"
+            id: "events",
           },
         ]}
         children={[...Home()]}
       />
       <Sidebar />
+      <div style={{ height: "100vh" }} />
 
-
-      {/* <div style={{ height: "100vh" }} /> */}
       <Header />
       <HighlightedEvent />
       <EventList />
