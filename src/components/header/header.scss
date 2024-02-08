@@ -1,0 +1,26 @@
+header {
+  padding: 1rem;
+  text-align: right;
+
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 20px;
+  right: 50px;
+
+
+  nav{
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  @media screen and (max-width:766px){
+    right: -500px;
+  }
+}
