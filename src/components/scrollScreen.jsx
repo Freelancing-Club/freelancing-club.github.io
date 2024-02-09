@@ -86,9 +86,7 @@ const ScrollScreen = ({ children, scrollBarColors }) => {
           );
         })}
 
-        {children.map((item,index) => (
-          <div style={{ height: "100vh" }} id={scrollBarColors[index].id} />
-        ))}
+   
       </ScreenContext.Provider>
 
       <ScrollBar>

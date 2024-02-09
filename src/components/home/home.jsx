@@ -37,12 +37,11 @@ const Section2 = () => {
 
 const Home = () => {
   return [
-    <SectionContainer>
+    <SectionContainer id="home">
       <Section1 />
     </SectionContainer>,
-    <SectionContainer>
+    <SectionContainer id="events">
       <Section2 />
-      Hello
     </SectionContainer>,
   ];
 };
